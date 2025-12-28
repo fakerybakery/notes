@@ -1,5 +1,7 @@
 # Music model
 
+- https://github.com/fakerybakery/DACVAE-selfcontained
+
 **Codecs**
 
 - S1-DAC is pretty good but NC-licensed
@@ -18,3 +20,9 @@ There's the question of whether to train Echo-TTS for longer sequences (>30s) or
 **Dataset**
 
 To start, a synthetic music dataset is probably the best. Can use an existing dataset we already have such as the Suno (700k) or Udio (few million but many duplicates) datasets. Perhaps synthetic music can be used to create a base model and others can finetune it on their own data. I don't think synthetic data alone will make a very good model at all, though it is much less risky to use synthetic data.
+
+## First experiment
+
+Code (private repo): https://github.com/fakerybakery/Versificator-Echo-DACVAE
+
+For the first experiment, probably best to train on a small dataset with only 30s songs. Needs to be lyric-aligned so use Udio not Suno dataset.
