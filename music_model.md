@@ -24,5 +24,9 @@ To start, a synthetic music dataset is probably the best. Can use an existing da
 ## First experiment
 
 Code (private repo): https://github.com/fakerybakery/Versificator-Echo-DACVAE
+Weights: https://huggingface.co/mrfakename/versificator
 
 For the first experiment, probably best to train on a small dataset with only 30s songs. Needs to be lyric-aligned so use Udio not Suno dataset.
+
+- After 100k steps its OK-ish -- sounds like music but the lyrics definitely are not intelligible yet. Jordan mentioned getting good WER after 100k steps but that was with a much larger batch size...
+- Need to finetune DACVAE
